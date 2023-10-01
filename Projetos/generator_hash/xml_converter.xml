@@ -1,0 +1,75 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ans="http://www.ans.gov.br/padroes/tiss/schemas" xmlns:xd="http://www.w3.org/2000/09/xmldsig#">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ans:solicitacaoProcedimentoWS xsi:schemaLocation="http://www.ans.gov.br/padroes/tiss/schemas http://www.ans.gov.br/padroes/tiss/schemas/tissWebServicesV4_01_00.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ans:cabecalho>
+                <ans:identificacaoTransacao>
+                    <ans:tipoTransacao>SOLICITACAO_PROCEDIMENTOS</ans:tipoTransacao>
+                    <ans:sequencialTransacao>178798</ans:sequencialTransacao>
+                    <ans:dataRegistroTransacao>2023-06-13</ans:dataRegistroTransacao>
+                    <ans:horaRegistroTransacao>07:03:19</ans:horaRegistroTransacao>
+                </ans:identificacaoTransacao>
+                <ans:origem>
+                    <ans:identificacaoPrestador>
+                        <ans:codigoPrestadorNaOperadora>49000383</ans:codigoPrestadorNaOperadora>
+                    </ans:identificacaoPrestador>
+                </ans:origem>
+                <ans:destino>
+                    <ans:registroANS>319384</ans:registroANS>
+                </ans:destino>
+                <ans:Padrao>4.01.00</ans:Padrao>
+            </ans:cabecalho>
+            <ans:solicitacaoProcedimento>
+                <ans:solicitacaoSP-SADT>
+                    <ans:cabecalhoSolicitacao>
+                        <ans:registroANS>319384</ans:registroANS>
+                        <ans:numeroGuiaPrestador>313986001</ans:numeroGuiaPrestador>
+                    </ans:cabecalhoSolicitacao>
+                    <ans:tipoEtapaAutorizacao>2</ans:tipoEtapaAutorizacao>
+                    <ans:dadosBeneficiario>
+                        <ans:numeroCarteira>00424250000226003</ans:numeroCarteira>
+                        <ans:atendimentoRN>N</ans:atendimentoRN>
+                    </ans:dadosBeneficiario>
+                    <ans:dadosSolicitante>
+                        <ans:contratadoSolicitante>
+                            <ans:codigoPrestadorNaOperadora>49000383</ans:codigoPrestadorNaOperadora>
+                            <ans:nomeContratado>POSTO COLETA 1</ans:nomeContratado>
+                        </ans:contratadoSolicitante>
+                        <ans:profissionalSolicitante>
+                            <ans:nomeProfissional>MARCELO GOELLNER</ans:nomeProfissional>
+                            <ans:conselhoProfissional>06</ans:conselhoProfissional>
+                            <ans:numeroConselhoProfissional>25500</ans:numeroConselhoProfissional>
+                            <ans:UF>43</ans:UF>
+                            <ans:CBOS>999999</ans:CBOS>
+                        </ans:profissionalSolicitante>
+                    </ans:dadosSolicitante>
+                    <ans:caraterAtendimento>1</ans:caraterAtendimento>
+                    <ans:dataSolicitacao>2023-06-13</ans:dataSolicitacao>
+                    <ans:indicacaoClinica>Med.Puran T4 50mg + Benincar 12,5mg + Aspirina 100mg + Sinvastatina 20mg + Dilpress 20mg + fluxocour 20mg</ans:indicacaoClinica>
+                    <ans:procedimentosSolicitados>
+                        <ans:procedimento>
+                            <ans:codigoTabela>22</ans:codigoTabela>
+                            <ans:codigoProcedimento>40323676</ans:codigoProcedimento>
+                            <ans:descricaoProcedimento>PESQUISA RAPIDA PARA INFLUENZA A E B</ans:descricaoProcedimento>
+                        </ans:procedimento>
+                        <ans:quantidadeSolicitada>1</ans:quantidadeSolicitada>
+                    </ans:procedimentosSolicitados>
+                    <ans:procedimentosSolicitados>
+                        <ans:procedimento>
+                            <ans:codigoTabela>22</ans:codigoTabela>
+                            <ans:codigoProcedimento>40325024</ans:codigoProcedimento>
+                            <ans:descricaoProcedimento>ANTIGENO CORONAVÍRUS (COVID-19)</ans:descricaoProcedimento>
+                        </ans:procedimento>
+                        <ans:quantidadeSolicitada>1</ans:quantidadeSolicitada>
+                    </ans:procedimentosSolicitados>
+                    <ans:dadosExecutante>
+                        <ans:codigonaOperadora>49000383</ans:codigonaOperadora>
+                        <ans:nomeContratado>POSTO COLETA 1</ans:nomeContratado>
+                        <ans:CNES>5158656</ans:CNES>
+                    </ans:dadosExecutante>
+                </ans:solicitacaoSP-SADT>
+            </ans:solicitacaoProcedimento>
+            <ans:hash></ans:hash>
+        </ans:solicitacaoProcedimentoWS>
+    </soapenv:Body>
+</soapenv:Envelope>
