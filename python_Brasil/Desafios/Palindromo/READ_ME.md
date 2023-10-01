@@ -1,7 +1,22 @@
-# Evento Python Brasil Discord
-https://discord.com/events/1145926713436553236/1155754506794053735
+# 🎯 Objetivo
+Esse programa foi desenvolvido para analisar se o input do usuario é um palíndromo. O projeto tem o objetivo de passar os desafios realizados pela comunidade Python Brasil e desenvolvimento dos meus estudos.
 
-# 🚀 **Desafio Semana #1** 🚀
+- Linguagem utilizada: Python
+- Ação: Trata o input recebido e imprime uma mensagem.
+- Mensagem: "{input} é um pálindromo" ou "{input} não é um pálindromo"
+
+# 🔖 Referências:
+Para não utilizar bibliotecas externas como apresentado na regra do desafio precisei criar uma função e tive referencias para tal:
+- Remoção de Acentuação:
+  -  https://www.youtube.com/watch?v=Vr3Hq0frAA8
+- Remoção de Pontuação:
+  -  https://www.youtube.com/watch?v=bFOcvs6838w  
+# 
+
+## Sobre o Evento Python Brasil Discord
+Canal: https://discord.com/events/1145926713436553236/1155754506794053735
+
+## 🚀 **Desafio Semana #1** 🚀
 
 Olá, pessoal da comunidade Python!
 
