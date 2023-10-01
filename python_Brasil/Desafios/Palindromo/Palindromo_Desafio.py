@@ -1,22 +1,48 @@
-# Resolver as bibliotecas com funções
-import string
-from unidecode import unidecode
+print('*' * 15, "Valida Palíndromo", '*' * 15)
+print("_" * 50)
 
-print("Valida Palíndromo")
-print("-" * 50)
+# Função criada para remover a acentuação, pontuação e conversão da string para lower case
+def remove_acentuacao_e_pontuacao(palavra_original):
 
-palavra_original = input("Informe: ")
-palavra_semEspacos = palavra_original.replace(' ', '')
+    palavra_sempontuacao = ''
 
-# Remover os Acentos e converte para lower case
-palavra_semAcentuacao = unidecode(palavra_semEspacos).lower()
+    # Esse bloco Remove a Pontuação
+    for i in palavra_original:
+        if i.isalpha() or i.isdigit():
+            palavra_sempontuacao += i
 
-# Remove as Pontuaçoes
-palavra_semPontuacao = palavra_semAcentuacao.translate(str.maketrans('', '', string.punctuation))
+    # Esse bloco Remove a Acentuação
+    letras_de = 'áéíóúàèìòùâêîôûãõäëïöüçñÿýÁÉÍÓÚÀÈÌÒÙÂÊÎÔÛÃÕÄËÏÖÜÇÑŸÝ'
+    letras_para = 'aeiouaeiouaeiouaoaeioucnyyAEIOUAEIOUAEIOUAOAEIOUCNYY'
+    palavra_retorno = ''
+    contador = 0
 
-palavra_virada = palavra_semPontuacao[::-1]
+    while contador < len(palavra_sempontuacao):
 
-if palavra_virada == palavra_semPontuacao:
+        letra = palavra_sempontuacao[contador]
+        contador += 1
+        indice = letras_de.find(letra)
+
+        if indice == -1:
+            palavra_retorno += letra
+
+        else:
+            palavra_retorno += letras_para[indice]
+    # Retornando a palavra e convertendo para lower case
+    return palavra_retorno.lower()
+
+
+# Solicitando palavra
+palavra_original = input("Informe uma palavra para que eu verifique se a mesma é um palíndromo: ")
+
+# Tratando a palavra com a função criada
+palavra_tratada = remove_acentuacao_e_pontuacao(palavra_original)
+
+# Virando a palavra ao contrário
+palavra_virada = palavra_tratada[::-1]
+
+# Comparando e imprimindo o resultado
+if palavra_virada == palavra_tratada:
     print(f'"{palavra_original}" é um palíndromo!')
 else:
     print(f'"{palavra_original}" não é um palíndromo!')
